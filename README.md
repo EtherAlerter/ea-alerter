@@ -18,15 +18,12 @@ To query the service status:
 
 ## End-to-End Testing
 
-Docker-ethized version coming soon. For now:
-
-1. In the ea-queues project folder, run `yarn build && yarn start`.
-2. Ensure an Ethereum client like Ganache is running and exposing a JSON-RPC server on port 7545.
-3. In this project folder, run `yarn test:e2e`.
+    $> yarn e2e
 
 ## Packaging
 
     $> yarn build
+    $> yarn start:container
 
 ## POC
 

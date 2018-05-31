@@ -1,0 +1,20 @@
+version: '3'
+services:
+  queues:
+    image: rabbitmq:latest
+  ethereum:
+    image: harshjv/testrpc
+  alerter:
+    build:
+      context: ..
+    environment:
+      EA_RABBITMQ_ENDPOINT: amqp://queues
+      EA_ETHEREUM_ENDPOINT: http://ethereum:7545
+    depends_on:
+      - queues
+      - ethereum
+  tests:
+    build:
+      context: .
+    depends_on:
+      - alerter

@@ -1,0 +1,25 @@
+{
+  "name": "ea-alerter-e2e",
+  "version": "1.0.0",
+  "repository": "git@github.com:EtherAlerter/ea-alerter.git",
+  "author": "Jamie Hale <jamiesonhale@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "sleep 10 && ./node_modules/.bin/cucumber-js --require-module babel-register"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "node-fetch": "^2.1.2",
+    "ramda": "^0.25.0",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
