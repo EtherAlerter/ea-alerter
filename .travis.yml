@@ -7,6 +7,6 @@ services:
   - docker
 script:
   - yarn test
-  - yarn test:coverage
+  - yarn test:coverage --coverageReporters=text-lcov | coveralls
   - yarn e2e
 
