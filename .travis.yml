@@ -1,0 +1,12 @@
+dist: trusty
+sudo: required
+language: node_js
+node_js:
+  - "9"
+services:
+  - docker
+script:
+  - yarn test
+  - yarn test:coverage
+  - yarn e2e
+
