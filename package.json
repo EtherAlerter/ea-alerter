@@ -12,7 +12,7 @@
     "start": "./node_modules/.bin/babel-node ./src/index.js",
     "start:container": "docker run --env-file .env ea-alerter",
     "test": "./node_modules/.bin/jest",
-    "test:coverage": "./node_modules/.bin/jest --coverage"
+    "test:coverage": "./node_modules/.bin/jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
     "amqplib": "^0.5.2",
@@ -33,6 +33,7 @@
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
