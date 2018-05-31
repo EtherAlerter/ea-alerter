@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/EtherAlerter/ea-alerter.svg?branch=master)](https://travis-ci.org/EtherAlerter/ea-alerter)
+[![Coverage Status](https://coveralls.io/repos/github/EtherAlerter/ea-alerter/badge.svg?branch=master)](https://coveralls.io/github/EtherAlerter/ea-alerter?branch=master)
+
 # EtherAlerter Alerter Service
 
 Nothing to see here. Move along.
